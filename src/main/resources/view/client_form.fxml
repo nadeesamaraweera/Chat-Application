@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #a49494;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApplication.Controller.ClientController">
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #842eae;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApplication.Controller.ClientController">
    <children>
       <ImageView fx:id="btnSend" fitHeight="39.0" fitWidth="39.0" layoutX="354.0" layoutY="600.0" onMouseClicked="#mouseClickOnAction" onMouseEntered="#mouseEnterAnim" onMouseExited="#mouseExitAnim" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="600.0">
          <image>
@@ -31,14 +31,14 @@
             <Image url="@../assets/icons8-file-32.png" />
          </image>
       </ImageView>
-      <Pane layoutX="3.0" layoutY="2.0" prefHeight="64.0" prefWidth="400.0" style="-fx-background-color: #a49494;" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutX="3.0" layoutY="2.0" prefHeight="64.0" prefWidth="400.0" style="-fx-background-color: #a858bc;" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/icons8-user-50.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblClientName" layoutX="57.0" layoutY="17.0" prefHeight="25.0" prefWidth="115.0" text="client name">
+            <Label fx:id="lblClientName" layoutX="57.0" layoutY="17.0" prefHeight="25.0" prefWidth="115.0" text="client name" textFill="#540a66">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

@@ -51,9 +51,9 @@ public class HomeFormController implements Initializable {
             return;
         }
 
-        if (txtjon.getText().equals("") || txtjon.getText().equals("please enter your name !")) {
-            txtjon.setStyle("-fx-border-color: red");
-            txtjon.setText("please enter your name !");
+        if (txtjon.getText().equals("") || txtjon.getText().equals("Enter your name !")) {
+            txtjon.setStyle("-fx-text-fill-color: red");
+            txtjon.setText("Enter your name !");
             txtjon.selectAll();
             return;
         }

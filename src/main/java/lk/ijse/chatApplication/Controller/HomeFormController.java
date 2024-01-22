@@ -1,9 +1,9 @@
 package lk.ijse.chatApplication.Controller;
 
 import javafx.animation.ScaleTransition;
-import javafx.event.Event;
-import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
@@ -13,36 +13,29 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import lk.ijse.chatApplication.Util.ChatServer;
+
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class HomeFormController {
+import static lk.ijse.chatApplication.Util.ChatServer.start;
+
+public class HomeFormController implements Initializable {
     public TextField txtjon;
     public ImageView btnjon;
     static String name="";
 
-    @FXML
-    void initialize(){
-        try {
-            setServerUI();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-//       new Thread(ChatServer::start).start();
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        new Thread(()->{
+            ChatServer.start();
+        }).start();
     }
 
-    private void setServerUI() throws IOException {
-        Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/client_form.fxml"));
-        stage.getIcons().add(new Image("assets/icons8-send-30.png"));
-        stage.setScene(new Scene(fxmlLoader.load()));
-        stage.setResizable(false);
-        stage.setTitle("ChatServer");
-        stage.setOnCloseRequest(Event::consume);
-        stage.show();
-    }
-
-    public void txtjonOnActon() {
+    public void txtjonOnActon(ActionEvent event) {
         btnjonClick();
     }
 
@@ -51,40 +44,38 @@ public class HomeFormController {
 
         String[] words = name.split(" ");
 
-        HomeFormController.name =words[0];
+        HomeFormController.name = words[0];
 
-        if (txtjon.getText().equals("stop")){
+        if (txtjon.getText().equals("stop")) {
             System.exit(0);
             return;
         }
 
-        if (txtjon.getText().equals("") || txtjon.getText().equals("please enter your name !")){
+        if (txtjon.getText().equals("") || txtjon.getText().equals("please enter your name !")) {
             txtjon.setStyle("-fx-border-color: red");
             txtjon.setText("please enter your name !");
             txtjon.selectAll();
             return;
         }
-//        Detail.name=txtjon.getText();
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/client_form.fxml"));
-        stage.getIcons().add(new Image("assets/icons8-send-30.png"));
+        stage.getIcons().add(new Image("/assets/icons8-send-30.png"));
         try {
             stage.setScene(new Scene(fxmlLoader.load()));
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         stage.setResizable(false);
-        stage.setTitle(HomeFormController.name +" in your chat");
+        stage.setTitle(HomeFormController.name + " in your chat");
         stage.show();
         stage.centerOnScreen();
-        stage.setOnCloseRequest(Event::consume);
         txtjon.clear();
+
     }
 
     public void mouseEnterAnim(MouseEvent event) {
-        if (event.getSource() instanceof ImageView) {
-            ImageView icon = (ImageView) event.getSource();
+        if (event.getSource() instanceof javafx.scene.image.ImageView) {
+            javafx.scene.image.ImageView icon = (ImageView) event.getSource();
 
             ScaleTransition scaleT = new ScaleTransition(Duration.millis(200), icon);
             scaleT.setToX(1.2);

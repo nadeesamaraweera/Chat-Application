@@ -108,7 +108,7 @@ public class ClientController {
 
                         if (words[1].equals("emoji")){
                             if (words[2].equals("emoji01")){
-                                String myMsg = "Me "+img1;
+                                String myMsg = "Me - "+img1;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -118,7 +118,7 @@ public class ClientController {
                                 hBox.getChildren().add(label);
                                 Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                             }else if(words[2].equals("emoji02")){
-                                String myMsg = "Me "+img2;
+                                String myMsg = "Me - "+img2;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -128,7 +128,7 @@ public class ClientController {
                                 hBox.getChildren().add(label);
                                 Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                             }else if(words[2].equals("emoji03")){
-                                String myMsg = "Me "+img3;
+                                String myMsg = "Me - "+img3;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -138,7 +138,7 @@ public class ClientController {
                                 hBox.getChildren().add(label);
                                 Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                             }else if(words[2].equals("emoji04")){
-                                String myMsg = "Me "+img4;
+                                String myMsg = "Me - "+img4;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -148,7 +148,7 @@ public class ClientController {
                                 hBox.getChildren().add(label);
                                 Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                             }else if(words[2].equals("emoji05")){
-                                String myMsg = "Me "+img5;
+                                String myMsg = "Me - "+img5;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -158,7 +158,7 @@ public class ClientController {
                                 hBox.getChildren().add(label);
                                 Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                             }else {
-                                String myMsg = "Me "+img6;
+                                String myMsg = "Me - "+img6;
                                 Label label = new Label();
                                 label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                                 label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -170,7 +170,7 @@ public class ClientController {
                             }
                         } else if(!words[1].equals("img")){
 
-                            String myMsg = "Me "+nameWithoutMsg;
+                            String myMsg = "Me - "+nameWithoutMsg;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.CORNFLOWERBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -215,7 +215,7 @@ public class ClientController {
                     }else if(words[1].equals("emoji")){
 
                         if (words[2].equals("emoji01")){
-                            String emojiRecive = words[0]+":"+img1;
+                            String emojiRecive = words[0]+" : "+img1;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -225,7 +225,7 @@ public class ClientController {
                             hBox.getChildren().add(label);
                             Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                         }else if(words[2].equals("emoji02")){
-                            String emojiRecive = words[0]+":"+img2;
+                            String emojiRecive = words[0]+" : "+img2;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -235,7 +235,7 @@ public class ClientController {
                             hBox.getChildren().add(label);
                             Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                         }else if(words[2].equals("emoji03")){
-                            String emojiRecive = words[0]+":"+img3;
+                            String emojiRecive = words[0]+" : "+img3;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -245,7 +245,7 @@ public class ClientController {
                             hBox.getChildren().add(label);
                             Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                         }else if(words[2].equals("emoji04")){
-                            String emojiRecive = words[0]+":"+img4;
+                            String emojiRecive = words[0]+" : "+img4;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -255,7 +255,7 @@ public class ClientController {
                             hBox.getChildren().add(label);
                             Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                         }else if(words[2].equals("emoji05")){
-                            String emojiRecive = words[0]+":"+img5;
+                            String emojiRecive = words[0]+" : "+img5;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -265,7 +265,7 @@ public class ClientController {
                             hBox.getChildren().add(label);
                             Platform.runLater(()->msgVboxAp.getChildren().addAll(hBox));
                         } else {
-                            String emojiRecive = words[0]+":"+img6;
+                            String emojiRecive = words[0]+" : "+img6;
                             Label label = new Label();
                             label.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
                             label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
@@ -375,7 +375,7 @@ public class ClientController {
             }
         }
         try {
-            outputStream.writeUTF(clientName+" :"+txtMessage.getText());
+            outputStream.writeUTF(clientName+ " : " +txtMessage.getText());
             outputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
@@ -394,7 +394,7 @@ public class ClientController {
         label.setBackground(new Background(new BackgroundFill(Color.SILVER, CornerRadii.EMPTY, Insets.EMPTY)));
         label.setBorder(new Border(new BorderStroke(Color.ALICEBLUE, BorderStrokeStyle.SOLID, null, new BorderWidths(1))));
         label.setStyle("-fx-font-size: 20");
-        label.setText("Me :");
+        label.setText("Me : ");
         try {
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Select Image File");
@@ -425,38 +425,38 @@ public class ClientController {
     }
 
     public void emoji1OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji01";
+        String emoji = clientName + " emoji " + " emoji01 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
     }
 
     public void emoji2OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji02";
+        String emoji = clientName + " emoji " + " emoji02 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
     }
 
     public void emoji3OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji03";
+        String emoji = clientName + " emoji " + " emoji03 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
     }
 
     public void emoji4OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji04";
+        String emoji = clientName + " emoji " + " emoji04 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
     }
 
     public void emoji5OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji05";
+        String emoji = clientName + " emoji " + " emoji05 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
 
     }
 
     public void emoji6OnAction() throws IOException {
-        String emoji = clientName + " emoji" + " emoji06";
+        String emoji = clientName + " emoji " + " emoji06 ";
         outputStream.writeUTF(emoji);
         outputStream.flush();
     }

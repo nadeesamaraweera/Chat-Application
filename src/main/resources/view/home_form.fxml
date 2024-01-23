@@ -18,12 +18,12 @@
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <Label layoutX="43.0" layoutY="64.0" text="Enter your name :" AnchorPane.topAnchor="64.0">
+      <Label layoutX="43.0" layoutY="64.0" text="Enter your name :" textFill="#57075b" AnchorPane.topAnchor="64.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ImageView fx:id="btnjon" blendMode="COLOR_BURN" fitHeight="64.0" fitWidth="132.0" layoutX="289.0" layoutY="275.0" onMouseClicked="#btnjonClick" onMouseEntered="#mouseEnterAnim" onMouseExited="#mouseExitAnim" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnjon" blendMode="MULTIPLY" fitHeight="64.0" fitWidth="132.0" layoutX="289.0" layoutY="275.0" onMouseClicked="#btnjonClick" onMouseEntered="#mouseEnterAnim" onMouseExited="#mouseExitAnim" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/download-removebg-preview.png" />
          </image>

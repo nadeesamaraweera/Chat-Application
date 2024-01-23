@@ -52,14 +52,14 @@ public class HomeFormController implements Initializable {
         }
 
         if (txtjon.getText().equals("") || txtjon.getText().equals("Enter your name !")) {
-            txtjon.setStyle("-fx-text-fill-color: red");
+            txtjon.setStyle("-fx-border-color: red");
             txtjon.setText("Enter your name !");
             txtjon.selectAll();
             return;
         }
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/client_form.fxml"));
-        stage.getIcons().add(new Image("/assets/icons8-send-30.png"));
+        stage.getIcons().add(new Image("/assets/pngegg.png"));
         try {
             stage.setScene(new Scene(fxmlLoader.load()));
         } catch (IOException e) {
